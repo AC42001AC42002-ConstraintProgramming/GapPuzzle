@@ -6,10 +6,7 @@ letting horizGaps =  [0,0,0,0,0,0,0,0,4]
 
 find m : matrix indexed by [int(1..9), int(1..9)] of int(0..1)
 
-
 such that 
-
-
 
 $2 squares per column + gaps
 forAll col : int(1..9) . 
@@ -29,8 +26,4 @@ forAll row : int(1..9) .
 				m[row+1,c] != 0 \/ 
 				m[row,c-1] != 0 \/ 
 				m[row,c+1] != 0 \/ 
-				m[row+1,c+1] != 0)))
-
-
-
-		
+				m[row+1,c+1] != 0)))		
