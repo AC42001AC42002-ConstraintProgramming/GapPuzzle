@@ -1,14 +1,14 @@
 language ESSENCE' 1.0
 
 $ @todo Prevent user from entering value greater than 7 (via a first contraint)?
+letting length = 9
 letting vertGaps = [0,0,4,0,0,0,0,0,0]
 letting horizGaps =  [0,0,0,0,0,0,0,0,4]
 
-find m : matrix indexed by [int(1..9), int(1..9)] of int(0..1)
+find m : matrix indexed by [int(1..length), int(1..length)] of int(0..1)
 
 such that 
 
 $2 squares per index
-forAll index : int(1..9).
+forAll index : int(1..length).
   sum(m[..,index]) = 2 /\ sum(m[index,..]) = 2
-  
