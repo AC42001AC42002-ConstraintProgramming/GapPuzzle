@@ -1,9 +1,10 @@
 language ESSENCE' 1.0
 
 $ @todo Prevent user from entering value greater than 7 (via a first contraint)?
+$ @todo length must be greater than 1
 letting length = 9
-letting vertGaps = [0,0,4,0,0,0,0,0,0]
-letting horizGaps =  [0,0,0,0,0,0,0,0,4]
+letting xGaps = [0,0,4,0,0,0,0,0,0]
+letting yGaps =  [0,0,0,0,0,0,0,0,4]
 
 find m : matrix indexed by [int(1..length), int(1..length)] of int(0..1)
 
