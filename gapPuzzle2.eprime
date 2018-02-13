@@ -15,12 +15,13 @@ such that
 
 $2 squares per index
 forAll index : int(1..length).
-  sum(m[.., index]) = 2 /\ sum(m[index, ..]) = 2
+  sum(m[.., index]) = 2 /\ sum(m[index, ..]) = 2,
 
 $ $ @todo Not very efficient as everything
 $ check NS, EW, NW, NE
-$ forAll x : int(0..length - 1) .
-$   forAll y : int(0..length - 1) .
-$     forAll xGap : int(x - xGaps[x]..x + xGaps[x]) .
-$       (x != xGap /\ xGap >= 1 /\ xGap < length) ->
-$         m[xGap, y] = 0
+forAll x : int(1..length) .
+  forAll y : int(1..length) .
+    m[x, y] = 1 ->
+      forAll xGap : int(x - xGaps[x]..x + xGaps[x]) .
+        (xGap != x /\ xGap >= 1 /\ xGap <= length) ->
+          m[xGap, y] = 0
