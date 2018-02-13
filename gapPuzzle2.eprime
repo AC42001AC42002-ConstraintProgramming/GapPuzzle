@@ -10,25 +10,5 @@ such that
 
 $2 squares per index
 forAll index : int(1..9).
-  sum(m[..,index]) = 2 /\ sum(m[index,..]) = 2,
-
-$gaps
-forAll col : int(1..9). 
-  forAll row: int(1..9).
-    m[row, col] = 1 -> 
-      (vertGaps[col] != 0 -> ((m[row - (vertGaps[col] + 1), col] = 1)))
-      \/
-      (m[row + (vertGaps[col] + 1), col] = 1),
-
-$ 2 squares per row + gaps. when out of bounds evaluates to false
-forAll row : int(1..9).
-  forAll c: int(1..9).
-    m[row,c] = 1 -> (( horizGaps[row]!=0 ->  ((m[row, c-(horizGaps[row]+1)] = 1) \/ (m[row, c+(horizGaps[row]+1)] = 1))  )
-    /\ !(m[row-1,c-1] != 0 \/ 
-      m[row-1,c] != 0 \/ 
-      m[row-1,c+1] != 0 \/ 
-      m[row+1,c-1] != 0 \/ 
-      m[row+1,c] != 0 \/ 
-      m[row,c-1] != 0 \/ 
-      m[row,c+1] != 0 \/ 
-      m[row+1,c+1] != 0))
+  sum(m[..,index]) = 2 /\ sum(m[index,..]) = 2
+  
