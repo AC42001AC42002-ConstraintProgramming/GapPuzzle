@@ -6,10 +6,15 @@ letting length = 9
 letting xGaps = [0,0,4,0,0,0,0,0,0]
 letting yGaps =  [0,0,0,0,0,0,0,0,4]
 
-find m : matrix indexed by [int(1..length), int(1..length)] of int(0..1)
+$ @todo Is it possible to find a list of points?
+find m : matrix indexed by [int(0..length - 1), int(0..length - 1)] of int(0..1)
 
-such that 
+such that
 
 $2 squares per index
-forAll index : int(1..length).
-  sum(m[..,index]) = 2 /\ sum(m[index,..]) = 2
+forAll index : int(0..length - 1).
+  sum(m[.., index]) = 2 /\ sum(m[index, ..]) = 2
+
+$ $ @todo Not very efficient as everything 
+$ forAll x : int(1..length) .
+$   forAll y : int(1..length) .
