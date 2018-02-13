@@ -1,0 +1,5 @@
+language ESSENCE' 1.0
+
+letting length be 9
+letting xGaps be [1, 1, 4, 1, 1, 1, 1, 1, 1]
+letting yGaps be [1, 1, 1, 1, 1, 1, 1, 1, 4]

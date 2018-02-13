@@ -2,3 +2,7 @@
 *.eprime.infor
 *.eprime.solution
 *.eprime.minion
+*.param.info
+*.param.infor
+*.param.minion
+*.param.solution
