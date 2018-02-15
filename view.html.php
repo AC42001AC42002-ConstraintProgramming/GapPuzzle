@@ -26,12 +26,12 @@
         <div class="row">
             <div class="square">0</div>
             <?php for ($i = 0; $i < N_ROWS; $i++) : ?>
-            <div class="square"><?= $i + 1 ?></div>
+            <div class="square"><?= $xGaps[$i] ?></div>
             <?php endfor ?>
         </div>
         <?php for ($i = 0; $i < N_ROWS; $i++) : ?>
         <div class="row">
-            <div class="square"><?= $i + 1 ?></div>
+            <div class="square"><?= $yGaps[$i] ?></div>
             <?php for ($j = 0; $j < count($array[$i]); ++$j) : ?>
             <div class="square <?php if (1 === $array[$j][$i]) : ?>-filled<?php endif ?>"></div>
             <?php endfor ?>
