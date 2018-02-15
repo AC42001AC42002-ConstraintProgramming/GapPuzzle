@@ -1,46 +1,45 @@
 language ESSENCE' 1.0
 
 $ @todo Prevent user from entering value greater than 7 (via a first contraint)?
-$ @todo length must be greater than 1
 $ @todo check "where"
 $ @todo symmetry between horizontal axis and vertical axis? (and diagonal?)
 $ @todo Don't forget to mention why we didn't go for extra padding in order to
 $ solve the out-of-bound problem.
 
 given length : int(1..)
-given xGaps : matrix indexed by [int(1..length)] of int(1..)
-given yGaps : matrix indexed by [int(1..length)] of int(1..)
+given verticalGaps : matrix indexed by [int(1..length)] of int(1..)
+given horizontalGaps : matrix indexed by [int(1..length)] of int(1..)
 
 $ @todo Is it possible to find a list of points?
 find m : matrix indexed by [int(1..length), int(1..length)] of int(0..1)
 
 such that
 
-$2 squares per index
 forAll index : int(1..length).
   sum(m[.., index]) = 2 /\ sum(m[index, ..]) = 2,
 
-$check NS, EW, NW, NE
 forAll x : int(1..length) .
   forAll y : int(1..length) .
-    m[x, y] = 1 -> (
-      (forAll xGap : int(x - xGaps[x]..x + xGaps[x]) .
-        (xGap != x /\ xGap >= 1 /\ xGap <= length) ->
-          m[xGap, y] = 0)
+    m[x, y] = 1 <-> (
+      (forAll gap : int(x - horizontalGaps[y]..x + horizontalGaps[y]) .
+        (gap != x /\ gap >= 1 /\ gap <= length) ->
+          m[gap, y] = 0)
       /\
-      (forAll yGap : int(y - yGaps[y]..y + yGaps[y]) .
-        (yGap != y /\ yGap >= 1 /\ yGap <= length) ->
-          m[x, yGap] = 0)
+      (forAll gap : int(y - verticalGaps[x]..y + verticalGaps[x]) .
+        (gap != y /\ gap >= 1 /\ gap <= length) ->
+          m[x, gap] = 0)
       /\
-      ((x > 1 /\ y > 1) ->
-        m[x - 1, y - 1] = 0)
+      (x < length ->
+        (y < length ->
+          m[x + 1, y + 1] = 0)
+        /\
+        (y > 1 ->
+          m[x + 1, y - 1] = 0))
       /\
-      ((x > 1 /\ y < length) ->
-        m[x - 1, y + 1] = 0)
-      /\
-      ((x < length /\ y > 1) ->
-        m[x + 1, y - 1] = 0)
-      /\
-      ((x < length /\ y < length) ->
-        m[x + 1, y + 1] = 0)
+      (x > 1 ->
+        (y < length ->
+            m[x - 1, y + 1] = 0)
+          /\
+          (y > 1 ->
+            m[x - 1, y - 1] = 0))
     )

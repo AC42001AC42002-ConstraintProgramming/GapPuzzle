@@ -2,14 +2,14 @@
 
 $paramFileContent = file_get_contents('gapPuzzle2.param');
 
-$xGapsStr = preg_replace('/^.+xGaps be /s', '', $paramFileContent);
-$xGapsStr = preg_replace('/\nletting yGaps.+/s', '', $xGapsStr);
+$horizontalGapsStr = preg_replace('/^.+horizontalGaps be /s', '', $paramFileContent);
+$horizontalGapsStr = preg_replace('/\nletting verticalGaps.+/s', '', $horizontalGapsStr);
 
-eval('$xGaps = '.$xGapsStr.';');
+eval('$horizontalGaps = '.$horizontalGapsStr.';');
 
-$yGapsStr = preg_replace('/^.+yGaps be /s', '', $paramFileContent);
+$verticalGapsStr = preg_replace('/^.+verticalGaps be /s', '', $paramFileContent);
 
-eval('$yGaps = '.$yGapsStr.';');
+eval('$verticalGaps = '.$verticalGapsStr.';');
 
 $solution = preg_replace(
     '/^.*letting m be /s',
