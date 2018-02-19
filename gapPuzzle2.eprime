@@ -29,7 +29,7 @@ forAll point : int(1..length) .
   yPoints[point, 1] != yPoints[point, 2],
 
 $ No diagonal-touching.
-forAll point : int(2..length - 1) .
+forAll point : int(1..length) .
   forAll i : int(-1, 1) .
     forAll k, l : int(1, 2) .
       (point > 1 -> xPoints[point - 1, k] != xPoints[point, l] + i)
