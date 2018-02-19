@@ -11,25 +11,41 @@ given verticalGaps : matrix indexed by [int(1..length)] of int(1..)
 given horizontalGaps : matrix indexed by [int(1..length)] of int(1..)
 
 $ @todo Is it possible to find a list of points?
+$ All filled squares indexed by x.
 find xPoints : matrix indexed by [int(1..length), int(1..2)] of int(1..length)
+$ All filled squares indexed by y.
 find yPoints : matrix indexed by [int(1..length), int(1..2)] of int(1..length)
 
 such that
 
-forAll xPoint : int(1..length) .
-  yPoints[xPoints[xPoint, 1], 1] = xPoint /\
-  yPoints[xPoints[xPoint, 2], 2] = xPoint,
+forAll x : int(1..length) .
+  forAll i : int(1..2) .
+    yPoints[xPoints[x, i], i] = x,
 
+$ All different points.
 forAll point : int(1..length) .
   xPoints[point, 1] != xPoints[point, 2] /\
   yPoints[point, 1] != yPoints[point, 2],
 
+$ No diagonal-touching.
 forAll point : int(2..length - 1) .
   forAll i : int(-1, 1) .
     forAll k, l : int(1, 2) .
       (point > 1 -> xPoints[point - 1, k] != xPoints[point, l] + i)
       /\
-      (point < length -> xPoints[point + 1, k] != xPoints[point, l] + i)
+      (point < length -> xPoints[point + 1, k] != xPoints[point, l] + i),
+
+$ forAll y : int(1..length) .
+$   (forAll xGap : int(y - horizontalGaps[y]..y + horizontalGaps[y]) .
+$     ((xGap >= 1 /\ xGap <= length /\ xGap != y) -> (
+$       xPoints[xGap, 1] != xGap /\
+$       xPoints[xGap, 2] != xGap))),
+
+forAll x : int(1..length) .
+  |xPoints[x, 1] - xPoints[x, 2]| > verticalGaps[x],
+
+forAll y : int(1..length) .
+  |yPoints[y, 1] - yPoints[y, 2]| > horizontalGaps[y]
 
 $ forAll x : int(1..length) .
 $   forAll y : int(1..length) .

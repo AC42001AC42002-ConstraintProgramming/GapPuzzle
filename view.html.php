@@ -23,6 +23,9 @@
         </style>
     </head>
     <body>
+        <pre>
+<?= var_dump($yPoints) ?>
+        </pre>
         <div class="row">
             <div class="square">0</div>
             <?php for ($i = 0; $i < LENGTH; $i++) : ?>
@@ -33,7 +36,7 @@
         <div class="row">
             <div class="square"><?= $horizontalGaps[$i] ?></div>
             <?php for ($j = 0; $j < LENGTH; ++$j) : ?>
-            <div class="square <?php if ($yPoints[$i][0] - 1=== $j || $yPoints[$i][1] - 1 === $j) : ?>-filled<?php endif ?>"></div>
+            <div class="square <?php if ($yPoints[$i][0] - 1 === $j || $yPoints[$i][1] - 1 === $j) : ?>-filled<?php endif ?>"></div>
             <?php endfor ?>
         </div>
         <?php endfor ?>
