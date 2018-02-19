@@ -25,15 +25,15 @@
     <body>
         <div class="row">
             <div class="square">0</div>
-            <?php for ($i = 0; $i < N_ROWS; $i++) : ?>
+            <?php for ($i = 0; $i < LENGTH; $i++) : ?>
             <div class="square"><?= $verticalGaps[$i] ?></div>
             <?php endfor ?>
         </div>
-        <?php for ($i = 0; $i < N_ROWS; $i++) : ?>
+        <?php for ($i = 0; $i < LENGTH; $i++) : ?>
         <div class="row">
             <div class="square"><?= $horizontalGaps[$i] ?></div>
-            <?php for ($j = 0; $j < count($array[$i]); ++$j) : ?>
-            <div class="square <?php if (1 === $array[$j][$i]) : ?>-filled<?php endif ?>"></div>
+            <?php for ($j = 0; $j < LENGTH; ++$j) : ?>
+            <div class="square <?php if ($yPoints[$i][0] - 1=== $j || $yPoints[$i][1] - 1 === $j) : ?>-filled<?php endif ?>"></div>
             <?php endfor ?>
         </div>
         <?php endfor ?>

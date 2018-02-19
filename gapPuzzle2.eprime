@@ -22,7 +22,14 @@ forAll xPoint : int(1..length) .
 
 forAll point : int(1..length) .
   xPoints[point, 1] != xPoints[point, 2] /\
-  yPoints[point, 1] != yPoints[point, 2]
+  yPoints[point, 1] != yPoints[point, 2],
+
+forAll point : int(2..length - 1) .
+  forAll i, j : int(-1, 1) .
+    forAll k, l : int(1, 2) .
+      (point > 1 -> xPoints[point - 1, k] != xPoints[point, l] + i)
+      /\
+      (point < length -> xPoints[point + 1, k] != xPoints[point, l] + i)
 
 $ forAll x : int(1..length) .
 $   forAll y : int(1..length) .

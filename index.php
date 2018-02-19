@@ -11,14 +11,14 @@ $verticalGapsStr = preg_replace('/^.+verticalGaps be /s', '', $paramFileContent)
 
 eval('$verticalGaps = '.$verticalGapsStr.';');
 
-$solution = preg_replace(
-    '/^.*letting m be /s',
+$yPointsStr = preg_replace(
+    '/^.*letting yPoints be /s',
     '',
-    str_replace(';int(1..9)', '', file_get_contents('gapPuzzle2.param.solution'))
+    str_replace([';int(1..9)', ';int(1..2)'], '', file_get_contents('gapPuzzle2.param.solution'))
 );
 
-eval('$array = '.   $solution.';');
+eval('$yPoints = '.   $yPointsStr.';');
 
-define('N_ROWS', count($array));
+define('LENGTH', count($yPoints));
 
 require 'view.html.php';
