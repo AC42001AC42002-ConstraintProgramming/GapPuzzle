@@ -13,6 +13,7 @@ given horizontalGaps : matrix indexed by [int(1..length)] of int(1..)
 $ @todo Is it possible to find a list of points?
 $ All filled squares indexed by x.
 find xPoints : matrix indexed by [int(1..length), int(1..2)] of int(1..length)
+
 $ All filled squares indexed by y.
 find yPoints : matrix indexed by [int(1..length), int(1..2)] of int(1..length)
 
@@ -35,8 +36,10 @@ forAll point : int(2..length - 1) .
       /\
       (point < length -> xPoints[point + 1, k] != xPoints[point, l] + i),
 
+$ Vertical gaps.
 forAll x : int(1..length) .
   |xPoints[x, 1] - xPoints[x, 2]| > verticalGaps[x],
 
+$ Horizontal gaps.
 forAll y : int(1..length) .
   |yPoints[y, 1] - yPoints[y, 2]| > horizontalGaps[y]
