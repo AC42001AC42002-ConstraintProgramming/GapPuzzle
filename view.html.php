@@ -24,7 +24,6 @@
     </head>
     <body>
         <pre>
-<?= var_dump($yPoints) ?>
         </pre>
         <div class="row">
             <div class="square">0</div>
