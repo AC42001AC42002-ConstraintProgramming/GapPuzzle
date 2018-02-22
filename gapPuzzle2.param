@@ -1,5 +1,5 @@
 language ESSENCE' 1.0
 
 letting length be 9
-letting horizontalGaps be [1, 1, 4, 1, 1, 1, 1, 1, 1]
-letting verticalGaps be [1, 1, 1, 1, 1, 1, 1, 1, 4]
+letting horizontalGaps be [0, 0, 4, 0, 0, 0, 0, 0, 0]
+letting verticalGaps be [0, 0, 0, 0, 0, 0, 0, 0, 4]
