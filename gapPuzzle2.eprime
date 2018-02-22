@@ -7,8 +7,11 @@ $ @todo Don't forget to mention why we didn't go for extra padding in order to
 $ solve the out-of-bound problem.
 
 given length : int(1..)
-given verticalGaps : matrix indexed by [int(1..length)] of int(1..)
-given horizontalGaps : matrix indexed by [int(1..length)] of int(1..)
+given verticalGaps : matrix indexed by [int(1..length)] of int(0..)
+given horizontalGaps : matrix indexed by [int(1..length)] of int(0..)
+
+letting defaultHorizontalGap be 1
+letting defaultVerticalGap be 1
 
 $ @todo Is it possible to find a list of points?
 $ All filled squares indexed by x.
@@ -38,8 +41,16 @@ forAll point : int(1..length) .
 
 $ Vertical gaps.
 forAll x : int(1..length) .
-  |xPoints[x, 1] - xPoints[x, 2]| > verticalGaps[x],
+  (verticalGaps[x] = 0 ->
+    |xPoints[x, 1] - xPoints[x, 2]| > defaultVerticalGap)
+  /\
+  (verticalGaps[x] != 0 ->
+    |xPoints[x, 1] - xPoints[x, 2]| = verticalGaps[x] + 1),
 
 $ Horizontal gaps.
 forAll y : int(1..length) .
-  |yPoints[y, 1] - yPoints[y, 2]| > horizontalGaps[y]
+  (horizontalGaps[y] = 0 ->
+    |yPoints[y, 1] - yPoints[y, 2]| > defaultHorizontalGap)
+  /\
+  (horizontalGaps[y] != 0 ->
+    |yPoints[y, 1] - yPoints[y, 2]| = horizontalGaps[y] + 1)
