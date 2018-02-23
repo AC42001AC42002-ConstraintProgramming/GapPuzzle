@@ -1,58 +1,38 @@
 language ESSENCE' 1.0
 
-$ @todo Prevent user from entering value greater than 7 (via a first contraint)?
-$ @todo check "where"
-$ @todo symmetry between horizontal axis and vertical axis? (and diagonal?)
-$ @todo Don't forget to mention why we didn't go for extra padding in order to
-$ solve the out-of-bound problem.
 
 given length : int(1..)
 given verticalGaps : matrix indexed by [int(1..length)] of int(0..)
 given horizontalGaps : matrix indexed by [int(1..length)] of int(0..)
 
-$ @todo Is it possible to find a list of points?
-find m : matrix indexed by [int(1..length), int(1..length)] of int(0..1)
 
-such that
+find m : matrix indexed by [int(1..length), int(1..length)] of bool
 
-forAll index : int(1..length).
-  sum(m[.., index]) = 2 /\ sum(m[index, ..]) = 2,
 
-forAll x : int(1..length) .
-  forAll y : int(1..length) .
-    m[x, y] = 1 -> (
-      (horizontalGaps[y] = 0 ->
-        forAll xGap : int(x - 1, x + 1) .
-          (xGap >= 1 /\ xGap <= length) ->
-            m[xGap, y] = 0)
-      /\
-      (horizontalGaps[y] != 0 ->
-        (forAll xGap : int(x - horizontalGaps[y] - 1, x + horizontalGaps[y] + 1) .
-          (xGap >= 1 /\ xGap <= length) ->
-            m[xGap, y] = 1))
-      /\
-      ((verticalGaps[x] = 0) ->
-        (forAll yGap : int(y - 1, y + 1) .
-          (yGap >= 1 /\ yGap <= length) ->
-            m[x, yGap] = 0))
-      /\
-      (verticalGaps[x] != 0 ->
-        (forAll yGap : int(y - verticalGaps[x] - 1, y + verticalGaps[x] + 1) .
-          (yGap >= 1 /\ yGap <= length) ->
-            m[x, yGap] = 1)
-      )
-      /\
-      (x < length ->
-        (y < length ->
-          m[x + 1, y + 1] = 0)
-        /\
-        (y > 1 ->
-          m[x + 1, y - 1] = 0))
-      /\
-      (x > 1 ->
-        (y < length ->
-            m[x - 1, y + 1] = 0)
-          /\
-          (y > 1 ->
-            m[x - 1, y - 1] = 0))
-    )
+such that 
+
+
+
+$ 2 squares per row + gaps + boxes around are 0. when out of bounds evaluates to false
+forAll row : int(1..length) . 
+	sum(m[row,..]) = 2 /\ 
+		(forAll c: int(1..length).
+		m[row,c] = 1 -> (( horizontalGaps[row]!=0 ->  ((m[row, c-(horizontalGaps[row]+1)] = 1) \/ (m[row, c+(horizontalGaps[row]+1)] = 1))  )
+			/\ !(m[row-1,c-1] != 0 \/ 
+				m[row-1,c] != 0 \/ 
+				m[row-1,c+1] != 0 \/ 
+				m[row+1,c-1] != 0 \/ 
+				m[row+1,c] != 0 \/ 
+				m[row,c-1] != 0 \/ 
+				m[row,c+1] != 0 \/ 
+				m[row+1,c+1] != 0))),
+
+
+$2 squares per column + gaps
+forAll col : int(1..length) . 
+	sum(m[..,col]) = 2 /\ 
+		(forAll r: int(1..length).
+		m[r,col] = 1 -> (verticalGaps[col]!=0 -> ((m[r-(verticalGaps[col]+1), col] = 1) \/ (m[r+(verticalGaps[col]+1), col] = 1) )))
+
+
+		
