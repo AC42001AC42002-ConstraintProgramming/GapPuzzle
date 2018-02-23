@@ -1,0 +1,10 @@
+,Branch,Options,SolverTotalTime,SavileRowClauseOut,SolverSolveTime,SavileRowTotalTime,SolverSatisfiable,SavileRowTimeOut,SolverNodes,SolverTimeOut,SolverSolutionsFound,SolverSetupTime
+Undefined,"ref: refs/heads/vladsStuff",,0.03968,0,0.039682,0.485,1,0,119,0,1,0
+Undefined,"ref: refs/heads/vladsStuff",-O0,0.047017,0,0.045722,0.265,1,0,119,0,1,0
+Undefined,"ref: refs/heads/vladsStuff",-O1,0.046873,0,0.045209,0.325,1,0,119,0,1,0
+Undefined,"ref: refs/heads/vladsStuff",-O2,0.072426,0,0.068568,0.462,1,0,119,0,1,0.000803
+Undefined,"ref: refs/heads/vladsStuff",-O3,0.077935,0,0.072677,0.57,1,0,119,0,1,0.001011
+Undefined,"ref: refs/heads/vladsStuff",-deletevars,0.057731,0,0.053878,0.462,1,0,119,0,1,0.000823
+Undefined,"ref: refs/heads/vladsStuff",-aggregate,0.052037,0,0.049794,0.547,1,0,119,0,1,0.000897
+Undefined,"ref: refs/heads/vladsStuff",-nomappers,0.058512,0,0.054613,0.479,1,0,119,0,1,0.000854
+Undefined,"ref: refs/heads/vladsStuff",-minionmappers,0.043597,0,0.040575,0.48,1,0,119,0,1,0.000506
