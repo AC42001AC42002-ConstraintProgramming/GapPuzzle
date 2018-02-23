@@ -1,0 +1,461 @@
+MINION 3
+# CSETopLevel_number = 0
+# CSETopLevel_eliminated_expressions = 0
+# CSETopLevel_total_size = 0
+# CSE_active_number = 32
+# CSE_active_eliminated_expressions = 78
+# CSE_active_total_size = 96
+**VARIABLES**
+DISCRETE xPoints_00000_00000 #
+{1..9}
+DISCRETE xPoints_00000_00001 #
+{1..9}
+DISCRETE xPoints_00001_00000 #
+{1..9}
+DISCRETE xPoints_00001_00001 #
+{1..9}
+DISCRETE xPoints_00002_00000 #
+{1..9}
+DISCRETE xPoints_00002_00001 #
+{1..9}
+DISCRETE xPoints_00003_00000 #
+{1..9}
+DISCRETE xPoints_00003_00001 #
+{1..9}
+DISCRETE xPoints_00004_00000 #
+{1..9}
+DISCRETE xPoints_00004_00001 #
+{1..9}
+DISCRETE xPoints_00005_00000 #
+{1..9}
+DISCRETE xPoints_00005_00001 #
+{1..9}
+DISCRETE xPoints_00006_00000 #
+{1..9}
+DISCRETE xPoints_00006_00001 #
+{1..9}
+DISCRETE xPoints_00007_00000 #
+{1..9}
+DISCRETE xPoints_00007_00001 #
+{1..9}
+DISCRETE xPoints_00008_00000 #
+{1..9}
+DISCRETE xPoints_00008_00001 #
+{1..9}
+DISCRETE yPoints_00000_00000 #
+{1..9}
+DISCRETE yPoints_00000_00001 #
+{1..9}
+DISCRETE yPoints_00001_00000 #
+{1..9}
+DISCRETE yPoints_00001_00001 #
+{1..9}
+DISCRETE yPoints_00002_00000 #
+{1..9}
+DISCRETE yPoints_00002_00001 #
+{1..9}
+DISCRETE yPoints_00003_00000 #
+{1..9}
+DISCRETE yPoints_00003_00001 #
+{1..9}
+DISCRETE yPoints_00004_00000 #
+{1..9}
+DISCRETE yPoints_00004_00001 #
+{1..9}
+DISCRETE yPoints_00005_00000 #
+{1..9}
+DISCRETE yPoints_00005_00001 #
+{1..9}
+DISCRETE yPoints_00006_00000 #
+{1..9}
+DISCRETE yPoints_00006_00001 #
+{1..9}
+DISCRETE yPoints_00007_00000 #
+{1..9}
+DISCRETE yPoints_00007_00001 #
+{1..9}
+DISCRETE yPoints_00008_00000 #
+{1..9}
+DISCRETE yPoints_00008_00001 #
+{1..9}
+DISCRETE aux24 #Active-CSE: 2 occurrences of this expression or equivalent: (xPoints_00005_00000 + 1)
+{2..10}
+DISCRETE aux25 #Active-CSE: 2 occurrences of this expression or equivalent: (xPoints_00005_00001 + 1)
+{2..10}
+DISCRETE aux26 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + xPoints_00008_00001)
+{0..8}
+DISCRETE aux27 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + xPoints_00008_00000)
+{0..8}
+DISCRETE aux28 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPoints_00006_00001)
+{2..10}
+DISCRETE aux29 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPoints_00006_00000)
+{2..10}
+DISCRETE aux30 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPoints_00003_00001)
+{2..10}
+DISCRETE aux31 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPoints_00003_00000)
+{2..10}
+DISCRETE aux32 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPoints_00001_00000)
+{2..10}
+DISCRETE aux33 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPoints_00001_00001)
+{2..10}
+DISCRETE aux34 #Active-CSE: 3 occurrences of this expression or equivalent: (-1 + xPoints_00007_00000)
+{0..8}
+DISCRETE aux35 #Active-CSE: 3 occurrences of this expression or equivalent: (-1 + xPoints_00007_00001)
+{0..8}
+DISCRETE aux36 #Active-CSE: 3 occurrences of this expression or equivalent: (xPoints_00005_00000-1)
+{0..8}
+DISCRETE aux37 #Active-CSE: 3 occurrences of this expression or equivalent: (xPoints_00005_00001-1)
+{0..8}
+DISCRETE aux38 #Active-CSE: 3 occurrences of this expression or equivalent: (xPoints_00004_00000-1)
+{0..8}
+DISCRETE aux39 #Active-CSE: 3 occurrences of this expression or equivalent: (xPoints_00004_00001-1)
+{0..8}
+DISCRETE aux40 #Active-CSE: 3 occurrences of this expression or equivalent: (-1 + xPoints_00001_00001)
+{0..8}
+DISCRETE aux41 #Active-CSE: 3 occurrences of this expression or equivalent: (-1 + xPoints_00001_00000)
+{0..8}
+DISCRETE aux42 #Active-CSE: 3 occurrences of this expression or equivalent: (-1 + xPoints_00006_00001)
+{0..8}
+DISCRETE aux43 #Active-CSE: 3 occurrences of this expression or equivalent: (-1 + xPoints_00006_00000)
+{0..8}
+DISCRETE aux44 #Active-CSE: 2 occurrences of this expression or equivalent: (xPoints_00000_00001-1)
+{0..8}
+DISCRETE aux45 #Active-CSE: 2 occurrences of this expression or equivalent: (xPoints_00000_00000-1)
+{0..8}
+DISCRETE aux46 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPoints_00002_00001)
+{2..10}
+DISCRETE aux47 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPoints_00002_00000)
+{2..10}
+DISCRETE aux48 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPoints_00007_00000)
+{2..10}
+DISCRETE aux49 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPoints_00007_00001)
+{2..10}
+DISCRETE aux50 #Active-CSE: 3 occurrences of this expression or equivalent: (-1 + xPoints_00002_00000)
+{0..8}
+DISCRETE aux51 #Active-CSE: 3 occurrences of this expression or equivalent: (-1 + xPoints_00002_00001)
+{0..8}
+DISCRETE aux52 #Active-CSE: 3 occurrences of this expression or equivalent: (-1 + xPoints_00003_00001)
+{0..8}
+DISCRETE aux53 #Active-CSE: 3 occurrences of this expression or equivalent: (-1 + xPoints_00003_00000)
+{0..8}
+DISCRETE aux54 #Active-CSE: 2 occurrences of this expression or equivalent: (xPoints_00004_00000 + 1)
+{2..10}
+DISCRETE aux55 #Active-CSE: 2 occurrences of this expression or equivalent: (xPoints_00004_00001 + 1)
+{2..10}
+DISCRETE aux74 #(xPoints_00000_00000-1*xPoints_00000_00001)
+{-8..8}
+DISCRETE aux75 #|aux74|
+{0..8}
+DISCRETE aux76 #(xPoints_00001_00000-1*xPoints_00001_00001)
+{-8..8}
+DISCRETE aux77 #|aux76|
+{0..8}
+DISCRETE aux78 #(xPoints_00002_00000-1*xPoints_00002_00001)
+{-8..8}
+DISCRETE aux79 #|aux78|
+{0..8}
+DISCRETE aux80 #(xPoints_00003_00000-1*xPoints_00003_00001)
+{-8..8}
+DISCRETE aux81 #|aux80|
+{0..8}
+DISCRETE aux82 #(xPoints_00004_00000-1*xPoints_00004_00001)
+{-8..8}
+DISCRETE aux83 #|aux82|
+{0..8}
+DISCRETE aux84 #(xPoints_00005_00000-1*xPoints_00005_00001)
+{-8..8}
+DISCRETE aux85 #|aux84|
+{0..8}
+DISCRETE aux86 #(xPoints_00006_00000-1*xPoints_00006_00001)
+{-8..8}
+DISCRETE aux87 #|aux86|
+{0..8}
+DISCRETE aux88 #(xPoints_00007_00000-1*xPoints_00007_00001)
+{-8..8}
+DISCRETE aux89 #|aux88|
+{0..8}
+DISCRETE aux90 #(xPoints_00008_00000-1*xPoints_00008_00001)
+{-8..8}
+DISCRETE aux92 #(yPoints_00000_00000-1*yPoints_00000_00001)
+{-8..8}
+DISCRETE aux93 #|aux92|
+{0..8}
+DISCRETE aux94 #(yPoints_00001_00000-1*yPoints_00001_00001)
+{-8..8}
+DISCRETE aux95 #|aux94|
+{0..8}
+DISCRETE aux96 #(yPoints_00002_00000-1*yPoints_00002_00001)
+{-8..8}
+DISCRETE aux98 #(yPoints_00003_00000-1*yPoints_00003_00001)
+{-8..8}
+DISCRETE aux99 #|aux98|
+{0..8}
+DISCRETE aux100 #(yPoints_00004_00000-1*yPoints_00004_00001)
+{-8..8}
+DISCRETE aux101 #|aux100|
+{0..8}
+DISCRETE aux102 #(yPoints_00005_00000-1*yPoints_00005_00001)
+{-8..8}
+DISCRETE aux103 #|aux102|
+{0..8}
+DISCRETE aux104 #(yPoints_00006_00000-1*yPoints_00006_00001)
+{-8..8}
+DISCRETE aux105 #|aux104|
+{0..8}
+DISCRETE aux106 #(yPoints_00007_00000-1*yPoints_00007_00001)
+{-8..8}
+DISCRETE aux107 #|aux106|
+{0..8}
+DISCRETE aux108 #(yPoints_00008_00000-1*yPoints_00008_00001)
+{-8..8}
+DISCRETE aux109 #|aux108|
+{0..8}
+DISCRETE aux110 #(xPoints_00000_00000 + 1)
+{2..10}
+DISCRETE aux111 #(xPoints_00000_00001 + 1)
+{2..10}
+DISCRETE aux112 #(1 + xPoints_00008_00000)
+{2..10}
+DISCRETE aux113 #(1 + xPoints_00008_00001)
+{2..10}
+ALIAS verticalGaps[9]=[0, 0, 0, 0, 0, 0, 0, 0, 4]
+ALIAS horizontalGaps[9]=[0, 0, 4, 0, 0, 0, 0, 0, 0]
+**SEARCH**
+PRINT[[xPoints_00000_00000],[xPoints_00000_00001],[xPoints_00001_00000],[xPoints_00001_00001],[xPoints_00002_00000],[xPoints_00002_00001],[xPoints_00003_00000],[xPoints_00003_00001],[xPoints_00004_00000],[xPoints_00004_00001],[xPoints_00005_00000],[xPoints_00005_00001],[xPoints_00006_00000],[xPoints_00006_00001],[xPoints_00007_00000],[xPoints_00007_00001],[xPoints_00008_00000],[xPoints_00008_00001],[yPoints_00000_00000],[yPoints_00000_00001],[yPoints_00001_00000],[yPoints_00001_00001],[yPoints_00002_00000],[yPoints_00002_00001],[yPoints_00003_00000],[yPoints_00003_00001],[yPoints_00004_00000],[yPoints_00004_00001],[yPoints_00005_00000],[yPoints_00005_00001],[yPoints_00006_00000],[yPoints_00006_00001],[yPoints_00007_00000],[yPoints_00007_00001],[yPoints_00008_00000],[yPoints_00008_00001]]
+VARORDER STATIC [xPoints_00000_00000, xPoints_00000_00001, xPoints_00001_00000, xPoints_00001_00001, xPoints_00002_00000, xPoints_00002_00001, xPoints_00003_00000, xPoints_00003_00001, xPoints_00004_00000, xPoints_00004_00001, xPoints_00005_00000, xPoints_00005_00001, xPoints_00006_00000, xPoints_00006_00001, xPoints_00007_00000, xPoints_00007_00001, xPoints_00008_00000, xPoints_00008_00001, yPoints_00000_00000, yPoints_00000_00001, yPoints_00001_00000, yPoints_00001_00001, yPoints_00002_00000, yPoints_00002_00001, yPoints_00003_00000, yPoints_00003_00001, yPoints_00004_00000, yPoints_00004_00001, yPoints_00005_00000, yPoints_00005_00001, yPoints_00006_00000, yPoints_00006_00001, yPoints_00007_00000, yPoints_00007_00001, yPoints_00008_00000, yPoints_00008_00001]
+VARORDER AUX [xPoints_00000_00000,xPoints_00000_00001,xPoints_00001_00000,xPoints_00001_00001,xPoints_00002_00000,xPoints_00002_00001,xPoints_00003_00000,xPoints_00003_00001,xPoints_00004_00000,xPoints_00004_00001,xPoints_00005_00000,xPoints_00005_00001,xPoints_00006_00000,xPoints_00006_00001,xPoints_00007_00000,xPoints_00007_00001,xPoints_00008_00000,xPoints_00008_00001,yPoints_00000_00000,yPoints_00000_00001,yPoints_00001_00000,yPoints_00001_00001,yPoints_00002_00000,yPoints_00002_00001,yPoints_00003_00000,yPoints_00003_00001,yPoints_00004_00000,yPoints_00004_00001,yPoints_00005_00000,yPoints_00005_00001,yPoints_00006_00000,yPoints_00006_00001,yPoints_00007_00000,yPoints_00007_00001,yPoints_00008_00000,yPoints_00008_00001,aux24,aux25,aux26,aux27,aux28,aux29,aux30,aux31,aux32,aux33,aux34,aux35,aux36,aux37,aux38,aux39,aux40,aux41,aux42,aux43,aux44,aux45,aux46,aux47,aux48,aux49,aux50,aux51,aux52,aux53,aux54,aux55,aux74,aux75,aux76,aux77,aux78,aux79,aux80,aux81,aux82,aux83,aux84,aux85,aux86,aux87,aux88,aux89,aux90,aux92,aux93,aux94,aux95,aux96,aux98,aux99,aux100,aux101,aux102,aux103,aux104,aux105,aux106,aux107,aux108,aux109,aux110,aux111,aux112,aux113]
+**CONSTRAINTS**
+watchelement_undefzero([yPoints_00000_00000, yPoints_00001_00000, yPoints_00002_00000, yPoints_00003_00000, yPoints_00004_00000, yPoints_00005_00000, yPoints_00006_00000, yPoints_00007_00000, yPoints_00008_00000], aux45, 1)
+watchelement_undefzero([yPoints_00000_00001, yPoints_00001_00001, yPoints_00002_00001, yPoints_00003_00001, yPoints_00004_00001, yPoints_00005_00001, yPoints_00006_00001, yPoints_00007_00001, yPoints_00008_00001], aux44, 1)
+watchelement_undefzero([yPoints_00000_00000, yPoints_00001_00000, yPoints_00002_00000, yPoints_00003_00000, yPoints_00004_00000, yPoints_00005_00000, yPoints_00006_00000, yPoints_00007_00000, yPoints_00008_00000], aux41, 2)
+watchelement_undefzero([yPoints_00000_00001, yPoints_00001_00001, yPoints_00002_00001, yPoints_00003_00001, yPoints_00004_00001, yPoints_00005_00001, yPoints_00006_00001, yPoints_00007_00001, yPoints_00008_00001], aux40, 2)
+watchelement_undefzero([yPoints_00000_00000, yPoints_00001_00000, yPoints_00002_00000, yPoints_00003_00000, yPoints_00004_00000, yPoints_00005_00000, yPoints_00006_00000, yPoints_00007_00000, yPoints_00008_00000], aux50, 3)
+watchelement_undefzero([yPoints_00000_00001, yPoints_00001_00001, yPoints_00002_00001, yPoints_00003_00001, yPoints_00004_00001, yPoints_00005_00001, yPoints_00006_00001, yPoints_00007_00001, yPoints_00008_00001], aux51, 3)
+watchelement_undefzero([yPoints_00000_00000, yPoints_00001_00000, yPoints_00002_00000, yPoints_00003_00000, yPoints_00004_00000, yPoints_00005_00000, yPoints_00006_00000, yPoints_00007_00000, yPoints_00008_00000], aux53, 4)
+watchelement_undefzero([yPoints_00000_00001, yPoints_00001_00001, yPoints_00002_00001, yPoints_00003_00001, yPoints_00004_00001, yPoints_00005_00001, yPoints_00006_00001, yPoints_00007_00001, yPoints_00008_00001], aux52, 4)
+watchelement_undefzero([yPoints_00000_00000, yPoints_00001_00000, yPoints_00002_00000, yPoints_00003_00000, yPoints_00004_00000, yPoints_00005_00000, yPoints_00006_00000, yPoints_00007_00000, yPoints_00008_00000], aux38, 5)
+watchelement_undefzero([yPoints_00000_00001, yPoints_00001_00001, yPoints_00002_00001, yPoints_00003_00001, yPoints_00004_00001, yPoints_00005_00001, yPoints_00006_00001, yPoints_00007_00001, yPoints_00008_00001], aux39, 5)
+watchelement_undefzero([yPoints_00000_00000, yPoints_00001_00000, yPoints_00002_00000, yPoints_00003_00000, yPoints_00004_00000, yPoints_00005_00000, yPoints_00006_00000, yPoints_00007_00000, yPoints_00008_00000], aux36, 6)
+watchelement_undefzero([yPoints_00000_00001, yPoints_00001_00001, yPoints_00002_00001, yPoints_00003_00001, yPoints_00004_00001, yPoints_00005_00001, yPoints_00006_00001, yPoints_00007_00001, yPoints_00008_00001], aux37, 6)
+watchelement_undefzero([yPoints_00000_00000, yPoints_00001_00000, yPoints_00002_00000, yPoints_00003_00000, yPoints_00004_00000, yPoints_00005_00000, yPoints_00006_00000, yPoints_00007_00000, yPoints_00008_00000], aux43, 7)
+watchelement_undefzero([yPoints_00000_00001, yPoints_00001_00001, yPoints_00002_00001, yPoints_00003_00001, yPoints_00004_00001, yPoints_00005_00001, yPoints_00006_00001, yPoints_00007_00001, yPoints_00008_00001], aux42, 7)
+watchelement_undefzero([yPoints_00000_00000, yPoints_00001_00000, yPoints_00002_00000, yPoints_00003_00000, yPoints_00004_00000, yPoints_00005_00000, yPoints_00006_00000, yPoints_00007_00000, yPoints_00008_00000], aux34, 8)
+watchelement_undefzero([yPoints_00000_00001, yPoints_00001_00001, yPoints_00002_00001, yPoints_00003_00001, yPoints_00004_00001, yPoints_00005_00001, yPoints_00006_00001, yPoints_00007_00001, yPoints_00008_00001], aux35, 8)
+watchelement_undefzero([yPoints_00000_00000, yPoints_00001_00000, yPoints_00002_00000, yPoints_00003_00000, yPoints_00004_00000, yPoints_00005_00000, yPoints_00006_00000, yPoints_00007_00000, yPoints_00008_00000], aux27, 9)
+watchelement_undefzero([yPoints_00000_00001, yPoints_00001_00001, yPoints_00002_00001, yPoints_00003_00001, yPoints_00004_00001, yPoints_00005_00001, yPoints_00006_00001, yPoints_00007_00001, yPoints_00008_00001], aux26, 9)
+abs(aux75, aux74)
+abs(aux77, aux76)
+abs(aux79, aux78)
+abs(aux81, aux80)
+abs(aux83, aux82)
+abs(aux85, aux84)
+abs(aux87, aux86)
+abs(aux89, aux88)
+abs(5, aux90)
+abs(aux93, aux92)
+abs(aux95, aux94)
+abs(5, aux96)
+abs(aux99, aux98)
+abs(aux101, aux100)
+abs(aux103, aux102)
+abs(aux105, aux104)
+abs(aux107, aux106)
+abs(aux109, aux108)
+diseq(yPoints_00000_00000,yPoints_00000_00001)
+diseq(yPoints_00001_00000,yPoints_00001_00001)
+diseq(yPoints_00002_00000,yPoints_00002_00001)
+diseq(yPoints_00003_00000,yPoints_00003_00001)
+diseq(yPoints_00004_00000,yPoints_00004_00001)
+diseq(yPoints_00005_00000,yPoints_00005_00001)
+diseq(yPoints_00006_00000,yPoints_00006_00001)
+diseq(yPoints_00007_00000,yPoints_00007_00001)
+diseq(yPoints_00008_00000,yPoints_00008_00001)
+ineq(1, aux75, -1)
+ineq(1, aux77, -1)
+ineq(1, aux79, -1)
+ineq(1, aux81, -1)
+ineq(1, aux83, -1)
+ineq(1, aux85, -1)
+ineq(1, aux87, -1)
+ineq(1, aux89, -1)
+ineq(1, aux93, -1)
+ineq(1, aux95, -1)
+ineq(1, aux99, -1)
+ineq(1, aux101, -1)
+ineq(1, aux103, -1)
+ineq(1, aux105, -1)
+ineq(1, aux107, -1)
+ineq(1, aux109, -1)
+gacalldiff([xPoints_00000_00000, xPoints_00000_00001, aux33])
+gacalldiff([xPoints_00001_00000, xPoints_00001_00001, aux46])
+gacalldiff([aux33, xPoints_00002_00000, xPoints_00002_00001])
+gacalldiff([aux38, xPoints_00003_00000, xPoints_00003_00001])
+gacalldiff([xPoints_00004_00000, xPoints_00004_00001, aux53])
+gacalldiff([aux39, xPoints_00005_00000, xPoints_00005_00001])
+gacalldiff([xPoints_00006_00000, xPoints_00006_00001, aux24])
+gacalldiff([aux42, xPoints_00007_00000, xPoints_00007_00001])
+gacalldiff([aux34, xPoints_00008_00000, xPoints_00008_00001])
+gacalldiff([xPoints_00001_00000, xPoints_00001_00001, aux45])
+gacalldiff([xPoints_00001_00000, xPoints_00001_00001, aux44])
+gacalldiff([xPoints_00001_00000, xPoints_00001_00001, aux110])
+gacalldiff([xPoints_00001_00000, xPoints_00001_00001, aux111])
+gacalldiff([xPoints_00000_00000, xPoints_00000_00001, aux41])
+gacalldiff([aux41, xPoints_00002_00000, xPoints_00002_00001])
+gacalldiff([xPoints_00000_00000, xPoints_00000_00001, aux40])
+gacalldiff([aux40, xPoints_00002_00000, xPoints_00002_00001])
+gacalldiff([xPoints_00000_00000, xPoints_00000_00001, aux32])
+gacalldiff([aux32, xPoints_00002_00000, xPoints_00002_00001])
+gacalldiff([xPoints_00001_00000, xPoints_00001_00001, aux50])
+gacalldiff([aux50, xPoints_00003_00000, xPoints_00003_00001])
+gacalldiff([xPoints_00001_00000, xPoints_00001_00001, aux51])
+gacalldiff([aux51, xPoints_00003_00000, xPoints_00003_00001])
+gacalldiff([xPoints_00001_00000, xPoints_00001_00001, aux47])
+gacalldiff([aux47, xPoints_00003_00000, xPoints_00003_00001])
+gacalldiff([aux46, xPoints_00003_00000, xPoints_00003_00001])
+gacalldiff([xPoints_00002_00000, xPoints_00002_00001, aux53])
+gacalldiff([xPoints_00002_00000, xPoints_00002_00001, aux52])
+gacalldiff([xPoints_00004_00000, xPoints_00004_00001, aux52])
+gacalldiff([xPoints_00002_00000, xPoints_00002_00001, aux31])
+gacalldiff([xPoints_00004_00000, xPoints_00004_00001, aux31])
+gacalldiff([xPoints_00002_00000, xPoints_00002_00001, aux30])
+gacalldiff([xPoints_00004_00000, xPoints_00004_00001, aux30])
+gacalldiff([aux38, xPoints_00005_00000, xPoints_00005_00001])
+gacalldiff([aux39, xPoints_00003_00000, xPoints_00003_00001])
+gacalldiff([aux54, xPoints_00003_00000, xPoints_00003_00001])
+gacalldiff([aux54, xPoints_00005_00000, xPoints_00005_00001])
+gacalldiff([aux55, xPoints_00003_00000, xPoints_00003_00001])
+gacalldiff([aux55, xPoints_00005_00000, xPoints_00005_00001])
+gacalldiff([xPoints_00004_00000, xPoints_00004_00001, aux36])
+gacalldiff([xPoints_00006_00000, xPoints_00006_00001, aux36])
+gacalldiff([xPoints_00004_00000, xPoints_00004_00001, aux37])
+gacalldiff([xPoints_00006_00000, xPoints_00006_00001, aux37])
+gacalldiff([xPoints_00004_00000, xPoints_00004_00001, aux24])
+gacalldiff([xPoints_00004_00000, xPoints_00004_00001, aux25])
+gacalldiff([xPoints_00006_00000, xPoints_00006_00001, aux25])
+gacalldiff([xPoints_00005_00000, xPoints_00005_00001, aux43])
+gacalldiff([aux43, xPoints_00007_00000, xPoints_00007_00001])
+gacalldiff([xPoints_00005_00000, xPoints_00005_00001, aux42])
+gacalldiff([xPoints_00005_00000, xPoints_00005_00001, aux29])
+gacalldiff([aux29, xPoints_00007_00000, xPoints_00007_00001])
+gacalldiff([xPoints_00005_00000, xPoints_00005_00001, aux28])
+gacalldiff([aux28, xPoints_00007_00000, xPoints_00007_00001])
+gacalldiff([xPoints_00006_00000, xPoints_00006_00001, aux34])
+gacalldiff([xPoints_00006_00000, xPoints_00006_00001, aux35])
+gacalldiff([aux35, xPoints_00008_00000, xPoints_00008_00001])
+gacalldiff([xPoints_00006_00000, xPoints_00006_00001, aux48])
+gacalldiff([aux48, xPoints_00008_00000, xPoints_00008_00001])
+gacalldiff([xPoints_00006_00000, xPoints_00006_00001, aux49])
+gacalldiff([aux49, xPoints_00008_00000, xPoints_00008_00001])
+gacalldiff([xPoints_00007_00000, xPoints_00007_00001, aux27])
+gacalldiff([xPoints_00007_00000, xPoints_00007_00001, aux26])
+gacalldiff([xPoints_00007_00000, xPoints_00007_00001, aux112])
+gacalldiff([xPoints_00007_00000, xPoints_00007_00001, aux113])
+weightedsumleq([1,-1],[xPoints_00000_00000,xPoints_00000_00001],aux74)
+weightedsumgeq([1,-1],[xPoints_00000_00000,xPoints_00000_00001],aux74)
+weightedsumleq([1,-1],[xPoints_00001_00000,xPoints_00001_00001],aux76)
+weightedsumgeq([1,-1],[xPoints_00001_00000,xPoints_00001_00001],aux76)
+weightedsumleq([1,-1],[xPoints_00002_00000,xPoints_00002_00001],aux78)
+weightedsumgeq([1,-1],[xPoints_00002_00000,xPoints_00002_00001],aux78)
+weightedsumleq([1,-1],[xPoints_00003_00000,xPoints_00003_00001],aux80)
+weightedsumgeq([1,-1],[xPoints_00003_00000,xPoints_00003_00001],aux80)
+weightedsumleq([1,-1],[xPoints_00004_00000,xPoints_00004_00001],aux82)
+weightedsumgeq([1,-1],[xPoints_00004_00000,xPoints_00004_00001],aux82)
+weightedsumleq([1,-1],[xPoints_00005_00000,xPoints_00005_00001],aux84)
+weightedsumgeq([1,-1],[xPoints_00005_00000,xPoints_00005_00001],aux84)
+weightedsumleq([1,-1],[xPoints_00006_00000,xPoints_00006_00001],aux86)
+weightedsumgeq([1,-1],[xPoints_00006_00000,xPoints_00006_00001],aux86)
+weightedsumleq([1,-1],[xPoints_00007_00000,xPoints_00007_00001],aux88)
+weightedsumgeq([1,-1],[xPoints_00007_00000,xPoints_00007_00001],aux88)
+weightedsumleq([1,-1],[xPoints_00008_00000,xPoints_00008_00001],aux90)
+weightedsumgeq([1,-1],[xPoints_00008_00000,xPoints_00008_00001],aux90)
+weightedsumleq([1,-1],[yPoints_00000_00000,yPoints_00000_00001],aux92)
+weightedsumgeq([1,-1],[yPoints_00000_00000,yPoints_00000_00001],aux92)
+weightedsumleq([1,-1],[yPoints_00001_00000,yPoints_00001_00001],aux94)
+weightedsumgeq([1,-1],[yPoints_00001_00000,yPoints_00001_00001],aux94)
+weightedsumleq([1,-1],[yPoints_00002_00000,yPoints_00002_00001],aux96)
+weightedsumgeq([1,-1],[yPoints_00002_00000,yPoints_00002_00001],aux96)
+weightedsumleq([1,-1],[yPoints_00003_00000,yPoints_00003_00001],aux98)
+weightedsumgeq([1,-1],[yPoints_00003_00000,yPoints_00003_00001],aux98)
+weightedsumleq([1,-1],[yPoints_00004_00000,yPoints_00004_00001],aux100)
+weightedsumgeq([1,-1],[yPoints_00004_00000,yPoints_00004_00001],aux100)
+weightedsumleq([1,-1],[yPoints_00005_00000,yPoints_00005_00001],aux102)
+weightedsumgeq([1,-1],[yPoints_00005_00000,yPoints_00005_00001],aux102)
+weightedsumleq([1,-1],[yPoints_00006_00000,yPoints_00006_00001],aux104)
+weightedsumgeq([1,-1],[yPoints_00006_00000,yPoints_00006_00001],aux104)
+weightedsumleq([1,-1],[yPoints_00007_00000,yPoints_00007_00001],aux106)
+weightedsumgeq([1,-1],[yPoints_00007_00000,yPoints_00007_00001],aux106)
+weightedsumleq([1,-1],[yPoints_00008_00000,yPoints_00008_00001],aux108)
+weightedsumgeq([1,-1],[yPoints_00008_00000,yPoints_00008_00001],aux108)
+sumleq([xPoints_00000_00000,1],aux110)
+sumgeq([xPoints_00000_00000,1],aux110)
+sumleq([xPoints_00000_00001,1],aux111)
+sumgeq([xPoints_00000_00001,1],aux111)
+sumleq([1,xPoints_00008_00000],aux112)
+sumgeq([1,xPoints_00008_00000],aux112)
+sumleq([1,xPoints_00008_00001],aux113)
+sumgeq([1,xPoints_00008_00001],aux113)
+sumleq([xPoints_00005_00000,1],aux24)
+sumgeq([xPoints_00005_00000,1],aux24)
+sumleq([xPoints_00005_00001,1],aux25)
+sumgeq([xPoints_00005_00001,1],aux25)
+sumleq([-1,xPoints_00008_00001],aux26)
+sumgeq([-1,xPoints_00008_00001],aux26)
+sumleq([-1,xPoints_00008_00000],aux27)
+sumgeq([-1,xPoints_00008_00000],aux27)
+sumleq([1,xPoints_00006_00001],aux28)
+sumgeq([1,xPoints_00006_00001],aux28)
+sumleq([1,xPoints_00006_00000],aux29)
+sumgeq([1,xPoints_00006_00000],aux29)
+sumleq([1,xPoints_00003_00001],aux30)
+sumgeq([1,xPoints_00003_00001],aux30)
+sumleq([1,xPoints_00003_00000],aux31)
+sumgeq([1,xPoints_00003_00000],aux31)
+sumleq([1,xPoints_00001_00000],aux32)
+sumgeq([1,xPoints_00001_00000],aux32)
+sumleq([1,xPoints_00001_00001],aux33)
+sumgeq([1,xPoints_00001_00001],aux33)
+sumleq([-1,xPoints_00007_00000],aux34)
+sumgeq([-1,xPoints_00007_00000],aux34)
+sumleq([-1,xPoints_00007_00001],aux35)
+sumgeq([-1,xPoints_00007_00001],aux35)
+sumleq([xPoints_00005_00000,-1],aux36)
+sumgeq([xPoints_00005_00000,-1],aux36)
+sumleq([xPoints_00005_00001,-1],aux37)
+sumgeq([xPoints_00005_00001,-1],aux37)
+sumleq([xPoints_00004_00000,-1],aux38)
+sumgeq([xPoints_00004_00000,-1],aux38)
+sumleq([xPoints_00004_00001,-1],aux39)
+sumgeq([xPoints_00004_00001,-1],aux39)
+sumleq([-1,xPoints_00001_00001],aux40)
+sumgeq([-1,xPoints_00001_00001],aux40)
+sumleq([-1,xPoints_00001_00000],aux41)
+sumgeq([-1,xPoints_00001_00000],aux41)
+sumleq([-1,xPoints_00006_00001],aux42)
+sumgeq([-1,xPoints_00006_00001],aux42)
+sumleq([-1,xPoints_00006_00000],aux43)
+sumgeq([-1,xPoints_00006_00000],aux43)
+sumleq([xPoints_00000_00001,-1],aux44)
+sumgeq([xPoints_00000_00001,-1],aux44)
+sumleq([xPoints_00000_00000,-1],aux45)
+sumgeq([xPoints_00000_00000,-1],aux45)
+sumleq([1,xPoints_00002_00001],aux46)
+sumgeq([1,xPoints_00002_00001],aux46)
+sumleq([1,xPoints_00002_00000],aux47)
+sumgeq([1,xPoints_00002_00000],aux47)
+sumleq([1,xPoints_00007_00000],aux48)
+sumgeq([1,xPoints_00007_00000],aux48)
+sumleq([1,xPoints_00007_00001],aux49)
+sumgeq([1,xPoints_00007_00001],aux49)
+sumleq([-1,xPoints_00002_00000],aux50)
+sumgeq([-1,xPoints_00002_00000],aux50)
+sumleq([-1,xPoints_00002_00001],aux51)
+sumgeq([-1,xPoints_00002_00001],aux51)
+sumleq([-1,xPoints_00003_00001],aux52)
+sumgeq([-1,xPoints_00003_00001],aux52)
+sumleq([-1,xPoints_00003_00000],aux53)
+sumgeq([-1,xPoints_00003_00000],aux53)
+sumleq([xPoints_00004_00000,1],aux54)
+sumgeq([xPoints_00004_00000,1],aux54)
+sumleq([xPoints_00004_00001,1],aux55)
+sumgeq([xPoints_00004_00001,1],aux55)
+**EOF**
