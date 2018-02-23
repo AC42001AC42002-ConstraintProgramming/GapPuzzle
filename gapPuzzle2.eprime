@@ -6,7 +6,7 @@ given verticalGaps : matrix indexed by [int(1..length)] of int(0..)
 given horizontalGaps : matrix indexed by [int(1..length)] of int(0..)
 
 
-find m : matrix indexed by [int(1..length), int(1..length)] of bool
+find m : matrix indexed by [int(1..length), int(1..length)] of int(0..1)
 
 
 such that 

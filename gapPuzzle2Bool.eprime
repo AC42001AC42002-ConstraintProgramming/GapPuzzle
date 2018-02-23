@@ -1,0 +1,38 @@
+language ESSENCE' 1.0
+
+
+given length : int(1..)
+given verticalGaps : matrix indexed by [int(1..length)] of int(0..)
+given horizontalGaps : matrix indexed by [int(1..length)] of int(0..)
+
+
+find m : matrix indexed by [int(1..length), int(1..length)] of bool
+
+
+such that 
+
+
+
+$ 2 squares per row + gaps + boxes around are 0. when out of bounds evaluates to false
+forAll row : int(1..length) . 
+	sum(m[row,..]) = 2 /\ 
+		(forAll c: int(1..length).
+		m[row,c] = true -> (( horizontalGaps[row]!=0 ->  ((m[row, c-(horizontalGaps[row]+1)] = true) \/ (m[row, c+(horizontalGaps[row]+1)] = true))  )
+			/\ !(m[row-1,c-1] != false \/ 
+				m[row-1,c] != false \/ 
+				m[row-1,c+1] != false \/ 
+				m[row+1,c-1] != false \/ 
+				m[row+1,c] != false \/ 
+				m[row,c-1] != false \/ 
+				m[row,c+1] != false \/ 
+				m[row+1,c+1] != false))),
+
+
+$2 squares per column + gaps
+forAll col : int(1..length) . 
+	sum(m[..,col]) = 2 /\ 
+		(forAll r: int(1..length).
+		m[r,col] = true -> (verticalGaps[col]!=0 -> ((m[r-(verticalGaps[col]+1), col] = true) \/ (m[r+(verticalGaps[col]+1), col] = true) )))
+
+
+		
