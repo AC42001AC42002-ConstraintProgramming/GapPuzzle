@@ -1,0 +1,10 @@
+,Branch,Options,SolverTotalTime,SavileRowClauseOut,SolverSolveTime,SavileRowTotalTime,SolverSatisfiable,SavileRowTimeOut,SolverNodes,SolverTimeOut,SolverSolutionsFound,SolverSetupTime
+Undefined,"ref: refs/heads/master",,0.04727,0,0.043807,0.504,1,0,252,0,1,0.000709
+Undefined,"ref: refs/heads/master",-O0,0.046494,0,0.043213,0.244,1,0,252,0,1,0.000521
+Undefined,"ref: refs/heads/master",-O1,0.058755,0,0.056892,0.341,1,0,252,0,1,0
+Undefined,"ref: refs/heads/master",-O2,0.082073,0,0.078015,0.546,1,0,252,0,1,0.00086
+Undefined,"ref: refs/heads/master",-O3,0.086457,0,0.08048,0.639,1,0,252,0,1,0.001145
+Undefined,"ref: refs/heads/master",-deletevars,0.067703,0,0.067707,0.627,1,0,252,0,1,0
+Undefined,"ref: refs/heads/master",-aggregate,0.048725,0,0.046926,0.512,1,0,252,0,1,0
+Undefined,"ref: refs/heads/master",-nomappers,0.046693,0,0.04362,0.489,1,0,252,0,1,0.000514
+Undefined,"ref: refs/heads/master",-minionmappers,0.080649,0,0.076766,0.495,1,0,252,0,1,0.000842
